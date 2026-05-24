@@ -21,7 +21,7 @@ def levenshtein_distances(token1, token2):
     so_cot = len(token2) + 1
     
     # Tạo ma trận rỗng
-    leven_distances = []
+    levenshtein_distances = []
     
     # Duyệt từng hàng để có số hàng là độ dài của token 1, còn số cột là độ dài của token 2
     for i in range(so_hang):
@@ -34,10 +34,10 @@ def levenshtein_distances(token1, token2):
             hang_moi.append(0)
         
         # Thêm hàng đã tạo vào ma trận
-        leven_distances.append(hang_moi)
+        levenshtein_distances.append(hang_moi)
     
     # Trả về ma trận
-    return leven_distances
+    return levenshtein_distances
     # điền giá trị cho hàng và cột 
     for t1 in range(len(token1) + 1):
         distances[t1][0] = t1
