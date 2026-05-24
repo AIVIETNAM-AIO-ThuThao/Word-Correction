@@ -78,7 +78,7 @@ def main():
         # compute levenshtein distance
         levenshtein_distances = dict()
         for vocab in vocabs:
-            levenshtein_distances[vocab] = levenshtein_distance(word, vocab)
+            levenshtein_distances[vocab] = levenshtein_distances(word, vocab)
 
         # sorted by distance
         sorted_distences = dict(sorted(levenshtein_distances.items(), key=lambda item: item[1]))
