@@ -15,7 +15,7 @@ def load_vocab ( file_path ):    #Tạo hàm tên load_vocab nhận vào tham s�
 vocabs = load_vocab ( file_path ='./vocab.txt')
 
 # tạo hàm tính khoảng cách levenshtein giữa 2 token                
-def leven_distances(token1, token2):
+def levenshtein_distances(token1, token2):
     # Lấy độ dài của 2 chuỗi
     so_hang = len(token1) + 1
     so_cot = len(token2) + 1
